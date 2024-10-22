@@ -1,0 +1,1 @@
+SELECT mar_mas_expedition.name, COUNT(mar_tra_order.id) as total_order FROM mar_mas_expedition JOIN mar_tra_order ON mar_mas_expedition.id = mar_tra_order.expedition_id GROUP BY mar_mas_expedition.id
